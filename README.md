@@ -8,7 +8,10 @@
 * `scripts/`: setup scripts
 * `demos/`: full, working versions of demos as jupyter notebooks
 
+## Getting started
+* Install requirements
+
 ## Running PostgreSQL
 
-Running a dockerized PostgreSQL container with the sample data: `scripts/run_dockerized_pg.sh`
+Running a dockerized PostgreSQL container with the sample data: `scripts/run_dockerized_pg.sh`\
 Connecting to PostgreSQL to manually run SQL against the data: `scripts/psql_dockerized_postgres.sh`

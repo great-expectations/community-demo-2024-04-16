@@ -14,13 +14,20 @@ def _seed_data():
     conn.commit()
     conn.close()
 
+
 def _create_table(cursor):
-    cursor.execute("CREATE TABLE IF NOT EXISTS trip_data (id SERIAL PRIMARY KEY, pickup_datetime TIMESTAMP, passenger_count INT);")
+    cursor.execute(
+        "CREATE TABLE IF NOT EXISTS trip_data (id SERIAL PRIMARY KEY, pickup_datetime TIMESTAMP, passenger_count INT);"
+    )
+
 
 def _actually_seed_data(cursor, rows):
     for row in rows:
         datetime, passenger_count = row
-        cursor.execute(f"INSERT INTO trip_data (pickup_datetime, passenger_count) VALUES ('{datetime}', {passenger_count or 'NULL'});")
+        cursor.execute(
+            f"INSERT INTO trip_data (pickup_datetime, passenger_count) VALUES ('{datetime}', {passenger_count or 'NULL'});"
+        )
+
 
 def _read_csvs():
     directory = "data"
@@ -29,7 +36,7 @@ def _read_csvs():
     for file in files:
         file_path = os.path.join(directory, file)
         print(f"Reading '{file}'...")
-        with open(file_path, 'r') as csv_file:
+        with open(file_path, "r") as csv_file:
             csv_reader = csv.reader(csv_file)
 
             titles = next(csv_reader)
@@ -48,8 +55,6 @@ def _get_connection():
         user=os.environ["DB_USERNAME"],
         password=os.environ["DB_PASSWORD"],
     )
-
-
 
 
 if __name__ == "__main__":
