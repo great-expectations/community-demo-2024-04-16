@@ -9,3 +9,16 @@
 
 ## Getting started
 * Install requirements
+
+## Running PostgreSQL
+
+We've prepared a dockerized PostgreSQL with sample data that you can run with the command:
+```
+./scripts/run_dockerized_pg.sh
+```
+
+If you want to connect to the database to manually execute SQL queries you can run:
+```
+./scripts/psql_dockerized_postgres.sh
+```
+This `psql` script has the connection string if you would like to use a different tool to connect to the database.
