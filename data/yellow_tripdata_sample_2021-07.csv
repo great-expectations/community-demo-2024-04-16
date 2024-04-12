@@ -1,2 +1,0 @@
-vendor_id,pickup_datetime,dropoff_datetime,passenger_count,trip_distance,rate_code_id,store_and_fwd_flag,pickup_location_id,dropoff_location_id,payment_type,fare_amount,extra,mta_tax,tip_amount,tolls_amount,improvement_surcharge,total_amount,congestion_surcharge
-2,2020-07-02 15:44:18,2020-07-02 16:00:19,200,2.0,1,N,129,82,2,11.0,0.0,0.5,0.0,0.0,0.3,11.8,0.0
