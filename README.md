@@ -2,7 +2,7 @@
 
 Demos of expectation authoring and validation workflows for great-expectations 1.0.
 
-These demos use [1.0.0a2](https://pypi.org/project/great-expectations/1.0.0a2/).
+These demos use python 3.10 with [1.0.0a2](https://pypi.org/project/great-expectations/1.0.0a2/).
 
 ## Getting started
 1. Create a virtual environment: `python -m venv .venv`
