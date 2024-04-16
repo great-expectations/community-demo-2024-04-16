@@ -1,3 +1,4 @@
+great-expectations==1.0.0a2
 jupyter
 psycopg2
 sqlalchemy
