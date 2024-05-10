@@ -11,6 +11,13 @@ These demos use python 3.10 with [1.0.0a2](https://pypi.org/project/great-expect
 1. Start the postgres container: `./scripts/run_dockerized_pg.sh`
 1. Run the notebooks in `demos/`
 
+### Additional steps for Macs with Apple Silicon (e.g. M1)
+You may need to run these additional steps
+* pip uninstall psycopg2
+* brew install libpq --build-from-source
+* export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
+* pip install psycopg2-binary
+
 ## Project Structure
 
 * `scripts/`: setup scripts
