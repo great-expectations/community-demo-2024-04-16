@@ -1,0 +1,4 @@
+great-expectations==1.0.0a4
+jupyter
+psycopg2
+sqlalchemy

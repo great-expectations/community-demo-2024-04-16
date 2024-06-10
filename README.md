@@ -1,15 +1,10 @@
-# GX Community Demo 2024-04-16
+# 1.0.0 Prerelease Demos
 
-Demos of expectation authoring and validation workflows for great-expectations 1.0.
+## About this repository
 
-These demos use python 3.10 with [1.0.0a2](https://pypi.org/project/great-expectations/1.0.0a2/).
-
-## Getting started
-1. Create a virtual environment: `python -m venv .venv`
-1. Source the virtual environment: `source .venv/bin/activate`
-1. Install requirements: `pip install -r requirements.txt`
-1. Start the postgres container: `./scripts/run_dockerized_pg.sh`
-1. Run the notebooks in `demos/`
+The included scripts and notebooks are intended to give a quick look at API changes in 1.0.0.
+Scripts that use postgres all use the same postgres image described below.
+Demos and scripts are found under the associated `gx-<VERSION>` directory, and a corresponding `requirements.txt` is included in each that pins the great_expectations version.
 
 ### Additional steps for Macs with Apple Silicon (e.g. M1)
 You may need to run these additional steps
@@ -20,9 +15,11 @@ You may need to run these additional steps
 
 ## Project Structure
 
+* `gx-*/`
+  * `demos/`: full, working versions of demos as notebooks
+  * `scripts/`: full, working python scripts
+  * `requirements.txt`: requirements files for the specific version
 * `scripts/`: setup scripts
-* `demos/`: full, working versions of demos as jupyter notebooks
-
 
 ## Running PostgreSQL
 
