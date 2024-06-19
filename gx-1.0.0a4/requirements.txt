@@ -2,3 +2,8 @@ great-expectations==1.0.0a4
 jupyter
 psycopg2
 sqlalchemy
+pandas
+pyarrow
+fastparquet
+s3fs
+boto3
