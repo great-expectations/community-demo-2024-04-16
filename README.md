@@ -16,8 +16,8 @@ You may need to run these additional steps
 ## Project Structure
 
 * `gx-*/`
-  * `demos/`: full, working versions of demos as notebooks
-  * `scripts/`: full, working python scripts
+  * `demos/notebooks`: full, working versions of demos as notebooks
+  * `demos/scripts`: full, working python scripts
   * `requirements.txt`: requirements files for the specific version
 * `scripts/`: setup scripts
 
